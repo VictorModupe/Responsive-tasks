@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 1;
+    padding: 10px;
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+
+}
+
+body{
+    background-color: rgb(212, 106, 96);
+    display: flex;
+    height: 100vh;
+    background-image: url("bg-intro-desktop.png");
+
+}
+
+.grid-class{
+    padding: 2em;
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "a c ";
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    place-items: center;
+}
+div{
+    padding: 2em;}
+
+.A{
+    grid-area:a;
+    width:60%;
+    color: aliceblue;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.B{
+    grid-area:b;
+    background-color: rgb(73, 101, 204);
+    border-radius: 7px;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 5px 0 rgba(50, 50, 50, 0.2), 0 6px 10px 0 rgba(53, 53, 53, 0.19);
+}
+.days{
+    font-weight: bold;
+}
+
+.C{
+    grid-area:c;
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    height: 300px;
+    border-radius: 7px;justify-items: center;
+    box-shadow: 0 4px 5px 0 rgba(50, 50, 50, 0.2), 0 6px 10px 0 rgba(53, 53, 53, 0.19);
+    
+}
+.formation{
+    align-content: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.C .button{
+    background-color: rgb(40, 163, 73);
+    padding: 10px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    width: 107%;
+    border: none;
+    border-radius: 4px;
+    height: 7vh;
+    justify-content: center;
+    font-weight: bold;
+    
+}
+.t1{
+    color: rgb(184, 184, 184);
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#t2{
+    color: rgb(225, 65, 65);
+}
+.B strong{
+    font-weight: bolder;
+}
+@media only screen and (max-width: 700px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+  }
+  .A{
+    color: aliceblue;
+    text-align: center;
+}}
